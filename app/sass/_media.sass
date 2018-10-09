@@ -3,8 +3,32 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1225px)
 	/**/
+	.section
+		max-width: 1000px
+
+	.application_block
+		width: 490px
+		height: 290px
+		span
+			font-size: 20px
+
+	.green-block
+		font-size: 12px
+
+	.tasks
+		width: 208px
+		div
+			font-size: 11px
+
+	.tasks:nth-of-type(2)
+		width: 502px
+		&:before
+			left: 502px
+		&:after
+			left: 562px
+
 
 
 /* Medium Devices, Desktops */
