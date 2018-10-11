@@ -123,18 +123,17 @@ nav
   &:active
     transform: scale(0.9)
   &:before
+    left: 0
+    top: -2px 
     width: 100%
     position: absolute
     z-index: -1
     content: ''
     height: 0px
+    transition: 0.2s
   &:hover:before
-    left: 0
-    top: -2px 
     height: 30px
     background-color: #fff
-    transition: 0.2s
-
 
 .active
   height: 30px
@@ -306,7 +305,7 @@ nav
   background-position: center
   background-repeat: no-repeat
   background-image: url(../img/arrow-next.png)
-  background-color: rgba(0, 0, 0, 0.51)
+  background-color: rgba(0, 0, 0, 0.36)
   &:hover
     background-color: rgba(0, 0, 0, 0.75)
   &:active
@@ -318,7 +317,7 @@ nav
   top: 50%
   left: 10px
   background-image: url(../img/arrow-prev.png)
-  background-color: rgba(0, 0, 0, 0.5)
+  background-color: rgba(0, 0, 0, 0.36)
   padding-top: 60px
   padding-left: 40px
   width: 27px
