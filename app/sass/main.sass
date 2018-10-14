@@ -276,21 +276,32 @@ nav
   z-index: 10
 
 .swiper-pagination-bullet
-  margin-left: 5px
+  opacity: 1
+  border-radius: 0px
   width: 32px
   height: 12px
   display: inline-block
-  background: #ffffff
+  background: #fff
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0px
+    left: 5px
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets
+  width: 200px
+  left: 11px
 
 .swiper-pagination-bullet:nth-child(1)
   margin-left: 24px
 
 .swiper-pagination-bullet-active
+  outline: none
   background: $accent
   width: 32px
   height: 12px
 
 .swiper-button-next
+  outline: none
   transition: 0.3s
   position: absolute
   top: 50%
@@ -313,6 +324,7 @@ nav
     transform: scale(0.9)
 
 .swiper-button-prev
+  outline: none
   transition: 0.3s
   position: absolute
   float: right
@@ -376,20 +388,6 @@ nav
   max-width: 700px
   width: 100%
   padding-right: 130px
-
-.slide_2
-  left: 990px
-
-.slide_3
-  left: 1980px
-
-.slide_4
-  left: 2970px
-
-.slide_5
-  left: 3960px
-
-
 
 .bg-penopolistirol
 	background-image: url(../img/bg-penopolistirol.png)
