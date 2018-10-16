@@ -42,7 +42,39 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.main-menu
+		display: none
+	.header-menu__item
+		transition: 1s
+		display: block
+		text-align: center
+		background-color: $accent
+		background-image: url(../img/pattern.png)
+	.toggle-button
+		text-align: center
+		margin: auto
+		font-size: 20px
+		font-weight: bold
+		text-align: center
+		display: block
+		cursor: pointer
+		color: #fff
+		&:after
+			content: attr(data-open)
+			display: block
+	nav
+		padding-top: 20px
+	
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu
+		display: block
+		position: absolute
+		top: 30px
+		width: 100%
+		margin: auto
 
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
+		content: attr(data-close)
+		cursor: pointer
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

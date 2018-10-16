@@ -31,7 +31,11 @@
 
 	<header>
 		<div class="header-menu__wrapper">
-			<nav>
+			<input type="checkbox" id="menu-checkbox">
+			<nav role="navigation">
+				<label for="menu-checkbox" class="toggle-button"
+				data-open="МЕНЮ" data-close="ЗАКРЫТЬ" onclick></label>
+				<div class="main-menu">	
 				<a href="index.html"><div class="header-menu__item active">ГЛАВНАЯ</div></a>
 				<a href=""><div class="header-menu__item">О КОМПАНИИ</div></a>
 				<a href=""><div class="header-menu__item">ВАКАНСИИ</div></a>
@@ -40,6 +44,7 @@
 				<a href=""><div class="header-menu__item">НОВОСТИ</div></a>
 				<a href=""><div class="header-menu__item">СТАТЬИ</div></a>
 				<a href=""><div class="header-menu__item">КОНТАКТЫ</div></a>
+				</div>
 			</nav>
 		</div>
 	</header>
