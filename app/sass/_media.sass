@@ -63,18 +63,94 @@
 			content: attr(data-open)
 			display: block
 	nav
+		height: 100px
+
+	label
 		padding-top: 20px
+		height: 60px
+		width: 100px
+		&:after
+			height: 60px
+			margin-left: -10px
 	
 	#menu-checkbox:checked + nav[role="navigation"] .main-menu
 		display: block
 		position: absolute
-		top: 30px
+		top: 60px
+		padding-top: 0px
 		width: 100%
 		margin: auto
 
 	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
 		content: attr(data-close)
 		cursor: pointer
+	
+	.bg-art_museum_render_1
+		background-size: 480px
+		height: 450px
+		background-color: #ffffff
+		background-image: none
+
+	.slider-inscription
+		width: 480px
+		top: 100px
+		font-size: 17px
+		p
+			font-size: 15px
+			margin-top: 0
+		img
+			margin-left: -24px
+			height: 500px
+			top: -100px
+			position: absolute
+			z-index: -1
+
+	.swiper-pagination-bullet
+		width: 22px
+		height: 8px
+
+	.container
+		display: block
+		max-width: 400px
+		height: 200px
+	
+	.swiper-container
+		width: 480px
+		height: 250px
+
+	.swiper-button-next,
+	.swiper-button-prev
+		display: none
+
+	.swiper-slide
+		img
+			height: auto
+			width: 480px
+	
+	
+	.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets
+		width: 150px
+
+	.slider-shadow
+		display: none
+
+	.logo_2
+		padding-top: 40px
+
+	.section h1
+		height: 50px
+		font-size: 16px
+
+	.video
+		width: 480px
+
+	iframe
+		width: 480px
+		height: 315px
+
+	.text-content
+		width: 480px
+		
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
