@@ -465,7 +465,7 @@ header
     transform: scale(0.95)
     transition: 0.5s
 
-.bg-buildings
+.section-application
   background-image: url(../img/bg-buildings.png)
   width: 100%
   margin-top: 10px
@@ -474,20 +474,22 @@ header
   background-size: 1980px
   background-position: center
 
-.bg-buildings .section h1
+.section-application .section h1
   margin-top: 0px
   padding-top: 46px
 
 .application
   display: flex
-  justify-content: space-between
   margin-top: 30px
 
 .application_block
+  margin-right: 2.5px
   position: relative
   width: 610px
-  height: 308px
+  height: 290px
   background-image: url(../img/application_1.png)
+  background-size: 100% 100%
+  background-repeat: no-repeat
   span
     position: absolute
     right: 50px
@@ -497,6 +499,7 @@ header
     font-size: 24px
 
 .application_block:nth-child(2)
+  margin-left: 2.5px
   background-image: url(../img/application_2.png)
   span
     left: 50px
@@ -526,7 +529,8 @@ header
   height: 100%
 
 .green-block
-  height: 18px
+  min-height: 18px
+  height: auto
   background-color: #01983b
   color: white
   position: absolute
@@ -539,11 +543,11 @@ header
   font-size: 14px
 
 .green-block:nth-of-type(3)
-  top: 86px
+  margin-top: 24px
   padding-left: 32px
 
 .green-block:nth-of-type(4)
-  top: 111px
+  margin-top: 48px
   padding-left: 26px
 
 .green-block:before
@@ -584,50 +588,50 @@ header
   margin: auto
     top: 50px
 
+.material-item
+  margin: auto
+  width: 190px
+  height: auto
+
+.rhombus-text
+  display: flex
+  justify-content: center
+  width: 100%
+  margin: auto
+  max-width: 190px
+  height: auto
+  color: #01983b
+  font-family: Arial, sans-serif
+  font-weight: bold
+  font-size: 14px
+  left: 0px
+  top: 200px
+  text-align: center
+  max-width: 130px
+
+.material-item:nth-child(5)
+  .rhombus-text
+    max-width: 150px
+
+.material-item:nth-child(even)
+  margin-top: 48px
+
 .rhombus
   display: flex
   align-items: center
   justify-content: center
-  bottom: 0
   position: relative
   width: 190px
+  height: 200px
   background-image: url(../img/rhombus.png)
   -webkit-background-size: 100%
   background-size: 100%
   background-position: center
   background-repeat: no-repeat
-  transition: bottom .25 ease
-  margin-top: -48px
-  span
-    position: absolute
-    display: flex
-    justify-content: center
-    width: 100%
-    margin: auto
-    max-width: 190px
-    height: auto
-    color: #01983b
-    font-family: Arial, sans-serif
-    font-weight: bold
-    font-size: 14px
-    left: 0px
-    top: 200px
-    text-align: center
+  transition: 0.5s
   &:hover
-    bottom: -5px
-  .rhombus-text
-    max-width: 130px
-  .rhombus-text_4
-    max-width: 150px
-  .rhombus-text_5
-    max-width: 150px
-
-.rhombus:nth-of-type(even)
-  margin-top: 48px
-
-.rhombus:nth-of-type(odd)
-  span
-    top: 248px
+    margin-bottom: 5px
+    transform: scale(1.025)
 
 .bg-with-character
   background-image: url(../img/bg-with-character.png)
@@ -711,7 +715,6 @@ header
 .bg-task
   background-image: url(../img/bg-task.png)
   width: 100%
-  height: 502px
   background-repeat: no-repeat
   background-size: 1980px
   background-position: center
